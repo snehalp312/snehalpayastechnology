@@ -1,0 +1,24 @@
+public class conditionifelse {
+
+	public static void main(String[] args) {
+		
+				int pwd;
+				System.out.println("Enter the password:=");
+				Scanner obj=new Scanner(System.in); 
+				pwd=obj.nextInt();
+				if(pwd==2344)
+				{
+					System.out.println("name=snehal");
+					System.out.println("school name=vvk karad");
+					System.out.println("roll no=34");
+					System.out.println("mobile no=9665639259");
+				}
+				
+				else
+				{	
+				System.out.println("sorry wrong password");
+				}
+			}
+	}
+
+
