@@ -1,0 +1,75 @@
+//write all the methods included in stringbuffer
+public class stringtest5 {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer();
+		System.out.println(sb.capacity());
+		//1 
+		sb.append("helo");
+		System.out.println(sb.capacity());
+		//2
+		sb.append("hellllllllllooo ");
+		System.out.println(sb.capacity());//16*2+2=34
+        //3
+		StringBuffer sb1=new StringBuffer("ishaaa");
+		System.out.println(sb1.charAt(3));
+		//4
+		StringBuffer sb2=new StringBuffer("snehal");
+        System.out.println(sb2.delete(3, 5));	
+       //5
+        StringBuffer sb3=new StringBuffer("samiksha");
+        StringBuffer sb4=sb3.append("hii");
+        System.out.println(sb3.equals(sb4));
+        //6
+        StringBuffer sb5=new StringBuffer("imsumit");
+        System.out.println(sb5.indexOf("u"));
+        //7
+        StringBuffer sb6=new StringBuffer("imsnehalpawar");
+        System.out.println(sb6.lastIndexOf("a"));
+        //8
+        StringBuffer sb7=new StringBuffer("prajwal");
+        System.out.println(sb7.insert(4, "z"));
+        //9
+        StringBuffer sb8=new StringBuffer("kajalpaw");
+        System.out.println(sb8.replace(4, 6, "zz"));
+        //10
+        StringBuffer sb9=new StringBuffer("pratiksha");
+        System.out.println(sb9.reverse());
+        //11
+        StringBuffer sb10=new StringBuffer("hii i m snehal");
+        System.out.println(sb10.subSequence(5, 9));
+        //12
+        StringBuffer sb11=new StringBuffer("you can definately do it");
+        System.out.println(sb11.substring(5, 9));
+        //13
+        StringBuffer sb12=new StringBuffer("you can definately do it");
+        System.out.println(sb12.substring(6));
+        //14
+        StringBuffer sb13=new StringBuffer("hii everone");
+        System.out.println(sb13.toString());//it converts stringbuffer into string 
+        //15
+        StringBuffer sb14=new StringBuffer();
+        System.out.println(sb14.capacity());
+        sb14.ensureCapacity(100);
+        System.out.println(sb14.capacity());//it will ty ensure the capacity to 100
+        //16
+        StringBuffer sb15=new StringBuffer("deepali");
+        sb15.setCharAt(3, 'z');
+        System.out.println(sb15);
+        //17
+        StringBuffer sb16=new StringBuffer("you need a tea break");
+        sb16.setLength(4);
+        System.out.println(sb16);
+                   //sb15 and sb16 both returns void values 
+                   //thars why they are not directly print.
+        
+        //18
+        StringBuffer sb17=new StringBuffer();
+        sb17.ensureCapacity(100);
+        sb17.append("hello");
+        sb17.trimToSize();
+        System.out.println(sb17.capacity());//it trims the size from 100 to 5
+  
+	}
+
+}
