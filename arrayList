@@ -1,0 +1,33 @@
+package collection1;
+
+import java.util.ArrayList;
+
+class employee1{
+	String name;
+	int id;
+	
+	public String toString() {
+		return id+" "+name;
+	}
+
+	public employee1(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+}
+
+public class Stringtest3 {
+public static void main(String[] args) {
+	ArrayList<employee1> e=new ArrayList<employee1>();
+	e.add(new employee1("snehal",234));
+	e.add(new employee1("priyanka",244));
+	e.add(new employee1("vaishnavi",254));
+	e.add(new employee1("kajal",264));
+
+	for (employee1 ee:e) {
+		System.out.println(ee);
+	}
+		 
+}
+}
