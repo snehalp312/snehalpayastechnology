@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class sidesoftriangle {
+
+	public static void main(String[] args) {
+		/*
+		 *  if the threee sides of triangle are entered through the keyboard, write a program to check whether 
+		 *   the traingle is isoscales or equilateral,scalen or right angle triangle.
+		 */
+		 int a,b,c;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length of three sides");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		
+		if (a==b && b==c && c==a)
+		{
+			System.out.println("Triangle is Equilateral triangle");
+		}
+		else if(a==b && b!=c)
+		{
+			System.out.println("Triangle is isoscales triangle");
+		}
+		else if(a!=b || b!=c || c!=a)
+		{
+			System.out.println("Triangle is scalen triangle");
+		}
+		else
+		{
+			System.out.println("Triangle is right angled triangle");
+		}}}
