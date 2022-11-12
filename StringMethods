@@ -1,0 +1,39 @@
+package javapart1;
+
+public class stringfunctions {
+
+	public static void main(String[] args) {
+    String a ="shankar";
+    System.out.println(a.length());//1
+    
+    String b="snehalpawar";
+    System.out.println(b.charAt(2));//2
+    
+    String c="this job is my dream ";
+    System.out.println(c.substring(0));//3
+    
+    String d="lets do hardwork";
+    System.out.println(d.toUpperCase());//4
+    
+    String e="YOUR FUTURE IS IN YOUR HANDS";
+    System.out.println(e.toLowerCase());//5
+    
+    String f="AC";
+    String g="AB";
+    System.out.println(f.compareTo(g));//6
+    
+    String h="ARCHANA";
+    String i="archana";
+    System.out.println(h.equals(i));//7
+    
+    String j="ARCHANA";
+    String k="archana";
+    System.out.println(j.equalsIgnoreCase(k));//8
+    
+    
+    
+	}
+
+	
+	}
+
