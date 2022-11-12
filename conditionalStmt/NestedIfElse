@@ -1,0 +1,32 @@
+package javafullcourse;
+
+public class nested_ifelse2 {
+
+	public static void main(String[] args)
+	{
+		int num1=10,num2=20,num3=100;
+		if(num1<num2)
+		{
+			if(num1>num3)
+			{
+				System.out.println("maximum number: "+num1);
+			}
+			else
+			{
+				System.out.println("maximum number:"+num3);
+			}
+		}
+		else
+		{
+			if(num2>num3)
+			{
+				System.out.println("maximum number:"+num2);
+			}
+			else
+			{
+				System.out.println("maximum number:"+num3);
+			}
+		}
+	}
+}
+
