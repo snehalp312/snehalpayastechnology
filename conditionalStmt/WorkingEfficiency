@@ -1,0 +1,33 @@
+package javapart1;
+
+import java.util.Scanner;
+
+public class workereffficiency {
+
+	public static void main(String[] args) {
+		double hours; //i=time taken by worker to complete work.
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the time required by the worker");
+		hours=sc.nextDouble();
+		
+		if(hours>2 && hours<=3)
+		{
+			System.out.println("the worker is highly efficient");
+		}
+		else if(hours>3 && hours<=4)
+		{
+			System.out.println("the worker needs to improve speed");
+		}
+		else if(hours>4 && hours<=5)
+		{
+			System.out.println(" Give training to worker ");
+		}
+		else 
+		{
+			System.out.println("the worker has to leave the company");
+		}
+		
+
+	}
+
+}
