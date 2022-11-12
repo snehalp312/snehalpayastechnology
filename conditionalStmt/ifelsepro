@@ -1,0 +1,27 @@
+package javafullcourse;
+
+import java.util.Scanner;
+
+
+public class condition_ifelse {
+	
+		public static void main(String[] args) {
+			int pwd;
+			System.out. print("Enter password;= ");
+			Scanner s=new Scanner(System.in);
+			pwd=s.nextInt();
+			if(pwd==2371)
+			{
+				System.out.println("my name=akhilesh");
+				System.out.println("my age=21");
+				
+
+	}
+			
+			else
+			{
+				System.out.println("Sorry!Wrong password");
+			}
+			
+		}
+}
