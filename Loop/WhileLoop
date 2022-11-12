@@ -6,21 +6,21 @@ class Main {
     int sum = 0;
 
     // create an object of Scanner class
-    Scanner input = new Scanner(System.in);
+    Scanner scn = new Scanner(System.in);
 
     // take integer input from the user
     System.out.println("Enter a number");
-    int number = input.nextInt();
+    int number = scn.nextInt();
 	   
     while (number >= 0) {
       // add only positive numbers
       sum += number;
 
       System.out.println("Enter a number");
-      number = input.nextInt();
+      number = scn.nextInt();
     }
 	   
     System.out.println("Sum = " + sum);
-    input.close();
+    scn.close();
   }
 }
